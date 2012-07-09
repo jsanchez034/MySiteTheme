@@ -1,0 +1,211 @@
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+body { }
+
+
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+#banner { }
+
+/* Fixed Topbar Navigation */
+body.top-navbar { padding-top: 60px; }
+body.admin-bar .navbar-fixed-top { top: 28px; }
+form.form-search { margin:0;float:right;}
+
+
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+
+#content { }
+
+
+
+/* =============================================================================
+   Primary Content
+   ========================================================================== */
+
+#main { 
+	background: white;
+}
+
+.socialm {
+	width: 36px;
+	height: 36px;
+	display: block;
+	text-indent: -1000px;
+	background-image: url('../img/socialm.png');
+	background-color:transparent;
+	margin:4px auto;
+	}
+
+.instg { background-position: 0 0 ;}
+.gplus { background-position: 37px 0; }
+
+.home  .pad20 .hero-unit {background-color: #fff; padding: 30px 60px;}
+
+.pad20 {
+	padding:20px;
+	border: 1px #999 solid;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.pad20 > h1{ padding-bottom:10px;}
+
+#sidebar .well, footer .well {
+	border: 1px #999 solid;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding-top:15px;
+}
+
+/*.pad20 .row { margin:0;}
+.post_box { clear: both;margin-bottom: 20px;float: left;width: 672px;}
+.row .tpost { margin:0;}
+.row .tpost a { color:#A86510;}
+.row .tpost.tpleft { margin-right:8px;}
+.row .tpost.tpright { }*/
+.row .tpost .entry-meta{ padding-bottom:5px;}
+.row .tpost .excerpt{ font-size: 1.1em;line-height: 1.5em; padding: 10px 0;}
+.row .tpost .excerpt img { float: left; padding: 5px 12px 4px 0; }
+.row .tpost h1.entry-title, h2.entry-title { margin-bottom:8px}
+.row .tpost h1.entry-title a, h2.entry-title  a { color:#555;}
+.row .tpost .calendar-icon { background: url('../organico/images/sprite.png') no-repeat scroll -334px -39px transparent;width: 14px;height: 14px;display: inline-block;margin-right: 2px;position: relative; }
+.row .tpost .sharing{ display:none !important; }
+
+.btn-group.filter {margin: 0 auto;display: table;}
+ul.filterable-grid {margin: 0 9px;padding: 0;list-style: none;overflow: visible !important;}
+ul.filterable-grid  li{list-style: none;float: left; display: inline-block;margin: 20px 35px;text-align:left; width:300px;}
+ul.filterable-grid li p.title{margin: 0;padding: 10px;background: #333;border-top: none; text-align:center;font-weight:bold;}
+ul.filterable-grid li a { text-decoration:none;}
+ul.filterable-grid li p.title a {color:#fff;}
+ul.filterable-grid li div.imgcont {position:relative;cursor:pointer;}
+ul.filterable-grid li p.excpt{position:absolute;top:0;left:0;width:280px;height:149px;background-color:#fff;overflow:hidden; margin: 0;padding: 10px;text-align:left; display:none;}
+ul.filterable-grid li p.excpt a {font-weight: bold;color: #555;display: block;float: right;}
+
+.widget_recent_entries ul, .widget_recent_entries_extended ul {list-style:none;margin:0;}
+
+/* =============================================================================
+   Sidebar
+   ========================================================================== */
+
+#sidebar { }
+
+
+
+/* =============================================================================
+   Posts
+   ========================================================================== */
+
+.hentry header { }
+.hentry h2 a { text-decoration: none; }
+.hentry time { display: block; }
+.hentry p.byline { }
+.hentry footer { clear: both; }
+
+
+
+/* =============================================================================
+   Post Comments
+   ========================================================================== */
+
+#comments, #respond, #submit { clear: both; display: block; }
+ol.commentlist img.avatar { float: left; margin-right: 10px; }
+
+
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+#content-info {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #555;
+}
+
+#content-info p small { font-size: 13px; }
+
+
+
+/* =============================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { margin: 0 20px 20px 0; float: left; }
+.alignright { margin: 0 0 20px 20px; float: right; }
+
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 979px) {
+  /* Fix top padding when using the responsive grid with the fixed topbar */
+  body.top-navbar {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 480px), (max-width: 768px) {
+	.page-template-work-php .pad20 { padding: 20px 5px;}
+	ul.filterable-grid {margin: 0 2px; }
+	ul.filterable-grid li { margin: 20px 0;}
+
+	#main + aside { margin-top: 20px;}
+
+	.home .pad20 .hero-unit {padding: 15px 10px;}
+	.hero-unit h1 {font-size: 30px; }
+	.hero-unit p {font-size: 14px;}
+
+	.modal { 
+	position: fixed; 
+	top: 3%; 
+	right: 3%; 
+	left: 3%; 
+	bottom: 3%; 
+	width: auto; 
+	margin: 0; 
+	max-height:380px;
+	}
+	.modal-body { 
+	height: 60%; 
+	}
+
+	.modal-body { 
+	max-height: 215px; 
+	padding: 15px; 
+	overflow-y: auto; 
+	}
+	
+	
+	.modal.fade.in {
+        top: 3%;
+
+	}
+
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+
+	.modal.fade.in {
+        top: 10px;
+
+	}
+	.modal-body { 
+		max-height: 40%; 
+		}
+
+}
